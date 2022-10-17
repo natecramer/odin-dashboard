@@ -11,7 +11,7 @@ body {
 .main-container {
     display: grid;
     grid-template-columns: 200px auto 400px;
-    grid-template-rows: 100px 100px auto;
+    grid-template-rows: 50px 50px auto;
     /* border: 1px solid black; */
     height: 100vh;
 }
@@ -26,11 +26,60 @@ body {
     grid-column: 1 / 2;
 }
 
+.header-search,
+.header-user-greeting,
+.header-buttons,
+.header-user {
+    background-color: white;
+}
+
 .header-search {
     grid-column: 2 / 3;
+    display: flex;
+    justify-items: left;
+    align-items: center;
 }
 
 .content-container {
     grid-column: 2 / 4;
     grid-row: 3 / 4;
+    background-color: silver;
+}
+
+.project-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    gap: 4px;
+}
+
+.project-card {
+    background-color: white;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    padding: 20px;
+}
+
+/* .project-card > * {
+    border: 1px solid blue;
+} */
+
+.project-card-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.project-card-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+}
+
+.project-card-buttons {
+    display: flex;
+    justify-content: flex-end;
 }
