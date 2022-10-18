@@ -155,7 +155,12 @@ input[type="text"]:focus {
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 8px;
-    padding: 8px;
+    padding: 28px;
+}
+
+.content-title {
+    padding: 6px;
+    font-size: 13pt;
 }
 
 .projects {
@@ -203,6 +208,7 @@ input[type="text"]:focus {
     flex-direction: column;
     justify-content: flex-start;
     height: 100%;
+    color: #555;
 }
 
 .project-card-buttons {
@@ -222,7 +228,7 @@ input[type="text"]:focus {
 
 .announcement-card,
 .trending-card {
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid #555;
     padding: 10px;
 }
 
@@ -235,6 +241,10 @@ input[type="text"]:focus {
     font-weight: bold;
 }
 
+.announcement-text {
+    color: #555;
+}
+
 .trending-card {
     display: flex;
     align-items: center;
@@ -245,3 +255,10 @@ input[type="text"]:focus {
     width: 50px;
 }
 
+.trending-right {
+    padding-left: 20px;
+}
+
+.trending-project {
+    color: #555;
+}
